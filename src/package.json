@@ -1,0 +1,40 @@
+{
+  "name": "ninja_mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ValeriyaSudarikova/ninja_mail.git"
+  },
+  "keywords": [
+    "SHA256:PlojEIbUE0jVbk6fN6a8FiGXg7jLH97RXkuogSHyFg4"
+  ],
+  "author": "v.sudarikova@mail.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeriyaSudarikova/ninja_mail/issues"
+  },
+  "homepage": "https://github.com/ValeriyaSudarikova/ninja_mail#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "phpmailer/phpmailer": "^6.5"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}
