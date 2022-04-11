@@ -1,0 +1,109 @@
+.menu {
+    margin-top: 0;
+    width: 340px;
+    border-right: 1px solid #E4E4E4;
+    &__search {
+        width: 100%;
+        border: 1px solid #F9F8F6;
+        padding-left: 47px;
+        font-size: 13px;
+        color: #999999;
+        background: #F9F8F6;
+        position: relative;
+        top: -2px;
+        &-img {
+            position: absolute;
+            display: block;
+            top: 105px;
+            left: 25px;
+        }
+    }
+    &__item {
+        padding: 20px 29px;
+        width: 100%;
+        min-height: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #E7E6E1;
+        opacity: 0.5;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            border:1px solid #808080ce;
+        }
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &-img {
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            object-fit: fill;
+        }
+        &-name {
+            margin-bottom: 0;
+            font-size: 10px;
+            color: $main-color;
+        }
+        &-descr {
+            font-size: 10px;
+            color: #808080;
+        }
+        &-dismiss {
+            padding-top: 1px;
+            text-align: center;
+            display: block;
+            width: 82px;
+            height: 16px;
+            font-size: 8px;
+            color: #808080;
+            background: #D2154F;
+            opacity: 0.5;
+            border-radius: 3px;
+        }
+        &-vacancy {
+            padding-top: 1px;
+            text-align: center;
+            display: block;
+            width: 54px;
+            height: 16px;
+            font-size: 8px;
+            color: #fff;
+            background: #2DD0C6;
+            opacity: 0.5;
+            border-radius: 3px;
+        }
+        &-activity {
+            font-size: 25px;
+            color: #A2A2A2;
+            text-align: center;
+            margin-top: 4px;
+            position: relative;
+            right: -20px;
+        }
+        & span {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        &-current {
+            margin-left: 6px;
+            display: none;
+        }
+        &.active {
+            background-color: #fff;
+            opacity: 1;
+            .menu__item-activity {
+                color: $red;
+            }
+            .menu__item-img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}

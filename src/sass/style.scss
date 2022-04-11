@@ -1,0 +1,10 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+@import 'base/variables';
+@import 'block/nav.scss';
+@import 'block/links';
+@import 'block/menu';
+@import 'block/tabs';

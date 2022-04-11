@@ -1,0 +1,22 @@
+.links {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 25px;
+    height: 48px;
+    background: #F3F2ED;
+    &__main {
+        font-size: 12px;
+        text-decoration: none;
+        color: $main-color;
+        cursor: pointer;
+        margin-right: 5px;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:nth-child(3) {
+            color: #707478;
+            margin-right: 0;
+        }
+    }
+}
