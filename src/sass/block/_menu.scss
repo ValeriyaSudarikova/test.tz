@@ -18,6 +18,10 @@
             left: 25px;
         }
     }
+    &__list {
+        list-style: none;
+        padding-left: 0;
+    }
     &__item {
         padding: 20px 29px;
         width: 100%;

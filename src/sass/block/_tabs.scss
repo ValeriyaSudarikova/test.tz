@@ -2,8 +2,6 @@
     position: relative;
     &__item {
         width: calc(100% - 340px);
-        min-height: 134px;
-        border-bottom: 1px solid #E4E4E4;
         padding: 16px 21px;
         position: absolute;
         left: 340px;
@@ -25,7 +23,7 @@
             position: absolute;
             display: block;
             top: 0;
-            left: 305px;
+            left: 250px;
         }
         &.status {
             position:absolute;
@@ -38,7 +36,7 @@
             border-radius: 100%;
         }
         &.name {
-            font-size: 24px;
+            font-size: 20px;
             position: absolute;
             top: 2px;
             left: 70px;
@@ -119,7 +117,152 @@
             }
         }
     }
-}
+    &__item-analitics {
+        &.header {
+            margin-top: 33px;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        &.warnings {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        &.warning {
+            position: relative;
+            width: 400px;
+            height: 74px;
+            border-radius:3px;
+            border: 1px solid $red;
+            padding-top: 20px;
+            padding-left: 40px;
+            font-size: 13px;
+            color:#3E3E3E;
+        }
+        &.img {
+            position: absolute;
+            left: 10px;
+            top: 30px;
+        }
+    }
+    &__item-main {
+        .header {
+            margin-top: 73px;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 300;
+        }
+        .data {
+            width: 100%;
+            min-height: 195px;
+            background-color: #F3F2F2;
+            border-radius: 3px;
+            color: #989898;
+            font-size: 13px;
+            font-weight: 400;
+            text-align: center;
+            padding-top: 90px;
+        }
+    }
+    &__item-statistic {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__item-chart {
+        &.header {
+            margin-top: 27px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 300;
+            text-align: left;
+        }
+        &.list {
+            position: relative;
+            padding-left: 0;
+            list-style: none;
+        }
+        &.list-item {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #F3F2F2;
+            font-size: 13px;
+            font-weight: 300;
+            &:nth-child(1) {
+                color:#808080;
+            }
+        }
+        &.criterium {
+            width: 205px;
+            &:nth-child(2) {
+                padding-left: 20px;
+            }
+        }
+        &.time {
+            width: 71px;
+            padding-left: 10px;
+        }
+        &.percent {
+            width: 70px;
+            padding-left: 20px;
+        }
+        &.growth {
+            width: 50px;
+            text-align: left;
+        }
+        &.square {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 0;
+            margin-top: 7px;
+            opacity: 0.5;
+            &.red {
+                background-color: $red;
+            }
+            &.yellow {
+                background-color:$yellow;
+            }
+            &.green {
+                background-color:#A6C8B3;
+            }
+        }
+        &.dicsipline {
+            width: 400px;
+            &.list-item {
+                &.first {
+                    text-align: center;
+                    align-items:center;
+                    justify-content: center;
+                }
+            }
+            &.criterium {
+                margin-right: 15px;
+                text-align: center;
+                width: 65px;
+            }
+            &.time {
+                margin-right: 15px;
+                padding-left: 0;
+                width: 95px;
+            }
+            &.percent {
+                margin-right: 15px;
+                padding-left: 0;
+                width: 90px;
+            }
+            &.growth {
+                width: 100px;
+                &:first-child {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 .block {
     margin-left: 60px;
     position: relative;
@@ -146,4 +289,21 @@
             left: 38px;
         }
     }
+}
+.wrapper {
+    min-height: 134px;
+    border-bottom: 1px solid #E4E4E4;
+}
+.comment {
+    font-size: 7px;
+    margin-top: 8px;
+    margin-left: 12px;
+    position: absolute;
+    &.red {
+        color: $red;
+    }
+    &.green {
+        color: #00983E;
+    }
+}
 }
