@@ -31,11 +31,14 @@
             Сотрудники
         </a>
         <img src="icons/header/next.svg" alt="следующая страница" class="links__next">
-        <a href="mailto:belyaeva@companyname.ru" class=" links__main name">
+        <!-- <a href="mailto:belyaeva@companyname.ru" class=" links__main name">
             Виктория Беляева, belyaeva@companyname
-        </a>
+        </a> -->
     </section>
     <section class="menu">
+        <button class="menu__open">
+            Открыть список
+        </button>
         <input type="search" class="menu__search" placeholder="быстрый поиск...">
         <img src="icons/menu/search.svg" alt="иконка поиска" class="menu__search-img">
         <ul class="menu__list">
@@ -75,79 +78,82 @@
                 <div class='menu__item-activity'>0</div>
             </li>
         </ul>
+        <button class="menu__close">
+            Закрыть список
+        </button>
     </section>
     <section class="tabs">
         <div class="tabs__item">
             <div class="wrapper">
                 <div class="tabs__item-header">
-                    <div class="block">
-                        <img src="icons/menu/ann.jpg" alt="фотография Анны" class="tabs__item-header img">
-                        <img src="icons/main/smile.svg" alt="статус работника" class="tabs__item-header status">
-                        <h3 class="tabs__item-header name">
-                            Анна Иванова
+                    <div class=" info">
+                        <img src="icons/menu/ann.jpg" alt="фотография Анны" class="tabs__item-header info img">
+                        <img src="icons/main/smile.svg" alt="статус работника" class="tabs__item-header info status">
+                        <h3 class="name">
+                        Анна Иванова
                         </h3>
-                        <div class="tabs__item-header descr">
+                        <div class="descr">
                             Менеджер, Отдел продаж
                         </div>
-                        <img src="icons/menu/current.svg" alt="текущий сотрудник" class="tabs__item-header current">
+                        <img src="icons/menu/current.svg" alt="текущий сотрудник" class="current">
                     </div>
-                    <div class="block">
-                        <div class="tabs__item-header online">
-                            Последняя антивность  <span> более месяца назад </span>
-                        </div>
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="online">
+                        Последняя антивность  <span> больше месяца назад</span>
+                    </div>
+                    <div class="risks">
+                        <h4 class="subtitle">
                             уровень риска
                         </h4>
-                        <!-- <div class="tabs__item-header number">
+                        <!-- <div class="number">
                             157
-                        </div> -->
-                        <!-- <div class="tabs__item-header percentage">
-                            -100% -->
-                        <!-- </div> -->
-                        <!-- <img src="icons/main/arrow.svg" alt="снижение показателя" class="tabs__item-header sign"> -->
+                        </div>
+                        <div class="percentage">
+                            -100%
+                        </div>
+                        <img src="icons/main/arrow.svg" alt="снижение показателя" class="sign"> -->
                     </div>
-                    <div class="block">
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="production">
+                        <h4 class="subtitle">
                             продуктивность
                         </h4>
-                        <!-- <div class="tabs__item-header number">
+                        <!-- <div class="number">
                             86%
                         </div>
-                        <div class="tabs__item-header percentage">
+                        <div class="percentage">
                             +3%
                         </div>
-                        <img src="icons/main/arrowgr.svg" alt="снижение показателя" class="tabs__item-header sign"> -->
+                        <img src="icons/main/arrowgr.svg" alt="снижение показателя" class="sign"> -->
                     </div>
-                    <div class="block">
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="activity">
+                        <h4 class="subtitle">
                             индекс активности
                         </h4>
-                        <!-- <div class="tabs__item-header number">
+                        <!-- <div class="number">
                             2,4%
                         </div>
-                        <div class="tabs__item-header percentage">
+                        <div class="percentage">
                             +14%
                         </div>
-                        <img src="icons/main/arrowred.svg" alt="снижение показателя" class="tabs__item-header sign"> -->
+                        <img src="icons/main/arrowred.svg" alt="снижение показателя" class="sign"> -->
                     </div>
-                    <div class="block">
-                        <a href="#" class="tabs__item-header link">
-                        <img src="icons/main/back.svg" alt="назад" class="back"> к списку сотрудников
+                    <div class="link-back">
+                        <a href="#" class="link">
+                            <img src="icons/main/back.svg" alt="назад" class="back"> к списку сотрудников
                         </a>
-                        <div class="tabs__item-header contacts">
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/check.svg" alt="проверить контакт">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/video.svg" alt="видеосвязь">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/window.svg" alt="открыть рабочий стол">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/list.svg" alt="добавить контакт">
-                            </a>
-                        </div>
+                    </div>
+                    <div class="contacts">
+                        <a href="#" class="contact">
+                            <img src="icons/main/check.svg" alt="проверить контакт">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/video.svg" alt="видеосвязь">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/window.svg" alt="открыть рабочий стол">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/list.svg" alt="добавить контакт">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -186,128 +192,130 @@
             </div>
             <div class="tabs__item-statistic">
                 <div class="tabs__item-chart">
-                    <h3 class="tabs__item-chart header">
+                    <h3 class="header">
                         Приложения и категории
                     </h3>
-                    <!-- <ul class="tabs__item-chart list">
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart criterium">
+                    <ul class="list">
+                        <li class="list-item">
+                            <div class="criterium">
                                 Категории приложений
                             </div>
-                            <div class="tabs__item-chart time">время</div>
-                            <div class="tabs__item-chart percent">%</div>
-                            <div class="tabs__item-chart growth">рост</div>
+                            <div class="time">время</div>
+                            <div class="percent">%</div>
+                            <div class="growth">рост</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square yellow"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square yellow"></div>
+                            <div class="criterium">
                                 Мессенджеры
                             </div>
-                            <div class="tabs__item-chart time"> 20.55</div>
-                            <div class="tabs__item-chart percent">18</div>
-                            <div class="tabs__item-chart growth">+2</div>
+                            <div class="time"> 20.55</div>
+                            <div class="percent">18</div>
+                            <div class="growth">+2</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square yellow"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square yellow"></div>
+                            <div class="criterium">
                                 Браузеры
                             </div>
-                            <div class="tabs__item-chart time"> 15.11</div>
-                            <div class="tabs__item-chart percent">12</div>
-                            <div class="tabs__item-chart growth">+3</div>
+                            <div class="time"> 15.11</div>
+                            <div class="percent">12</div>
+                            <div class="growth">+3</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square red"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square red"></div>
+                            <div class="criterium">
                                 Игры
                             </div>
-                            <div class="tabs__item-chart time">13.11</div>
-                            <div class="tabs__item-chart percent">7</div>
-                            <div class="tabs__item-chart growth">0</div>
+                            <div class="time">13.11</div>
+                            <div class="percent">7</div>
+                            <div class="growth">0</div>
                         </li>
-                    </ul> -->
+                    </ul>
                 </div>
                 <div class="tabs__item-chart">
-                    <h3 class="tabs__item-chart header">
+                    <h3 class="header">
                         Сайты и категории
                     </h3>
-                        <!-- <ul class="tabs__item-chart list">
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart criterium">
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="criterium">
                                     Категории сайтов
                                 </div>
-                                <div class="tabs__item-chart time">время</div>
-                                <div class="tabs__item-chart percent">%</div>
-                                <div class="tabs__item-chart growth">рост</div>
+                                <div class="time">время</div>
+                                <div class="percent">%</div>
+                                <div class="growth">рост</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square yellow"></div>
-                                <div class="tabs__item-chart criterium">
+                            <li class="list-item">
+                                <div class="square yellow"></div>
+                                <div class="criterium">
                                     поисковики
                                 </div>
-                                <div class="tabs__item-chart time"> 20.55</div>
-                                <div class="tabs__item-chart percent">18</div>
-                                <div class="tabs__item-chart growth">+2</div>
+                                <div class="time"> 20.55</div>
+                                <div class="percent">18</div>
+                                <div class="growth">+2</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square green"></div>
-                                <div class="tabs__item-chart criterium">
+                            <li class="list-item">
+                                <div class="square green"></div>
+                                <div class="criterium">
                                     Новостные порталы
                                 </div>
-                                <div class="tabs__item-chart time"> 15.11</div>
-                                <div class="tabs__item-chart percent">12</div>
-                                <div class="tabs__item-chart growth">+3</div>
+                                <div class="time"> 15.11</div>
+                                <div class="percent">12</div>
+                                <div class="growth">+3</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square green"></div>
-                                <div id="long" class="tabs__item-chart criterium long">
+                            <li class="list-item">
+                                <div class="square green"></div>
+                                <div id="long" class="criterium long">
                                     Сайты с неопределенным наполнением
                                 </div>
-                                <div class="tabs__item-chart time">13.11</div>
-                                <div class="tabs__item-chart percent">7</div>
-                                <div class="tabs__item-chart growth">0</div>
+                                <div class="time">13.11</div>
+                                <div class="percent">7</div>
+                                <div class="growth">0</div>
                             </li>
-                        </ul> -->
+                        </ul>
                 </div>
-            <div class="tabs__item-statistic">
-                <div class="tabs__item-chart dicsipline">
-                    <h3 class="tabs__item-chart header">
+                <div class="tabs__item-chart">
+                    
+                <div class="dicsipline">
+                    <h3 class="header">
                         Дисциплина
                     </h3>
-                    <!-- <ul class="tabs__item-chart list">
-                        <li class="tabs__item-chart dicsipline list-item first">
-                            <div class="tabs__item-chart dicsipline criterium">
+                    <ul class="list">
+                        <li class="list-item first">
+                            <div class="dicsipline criterium">
                                 Дата
                             </div>
-                            <div class="tabs__item-chart dicsipline time">Приход на работу</div>
-                            <div class="tabs__item-chart dicsipline percent">Уход с работы</div>
-                            <div class="tabs__item-chart dicsipline growth">Время на работе</div>
+                            <div class="time">Приход на работу</div>
+                            <div class="percent">Уход с работы</div>
+                            <div class="growth">Время на работе</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
+                        <li class="list-item">
+                            <div class="criterium">
                                 29.02
                             </div>
-                            <div class="tabs__item-chart dicsipline time">08:46 <span class="comment red"> +16 мин </span> </div>
-                            <div class="tabs__item-chart dicsipline percent">08:46 <span class="comment red"> +16 мин </span> </div>
-                            <div class="tabs__item-chart dicsipline growth">09:06 <span class="comment green"> +6 мин </span> </div>
+                            <div class="time">08:46 <span class="comment red"> +16 мин </span> </div>
+                            <div class="percent">08:46 <span class="comment red"> +16 мин </span> </div>
+                            <div class="growth">09:06 <span class="comment green"> +6 мин </span> </div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
+                        <li class="list-item">
+                            <div class="criterium">
                                 28.02
                             </div>
-                            <div class="tabs__item-chart dicsipline time">08:27 <span class="comment green"> -3 мин </span></div>
-                            <div class="tabs__item-chart dicsipline percent">08:27 <span class="comment green"> -3 мин </span></div>
-                            <div class="tabs__item-chart dicsipline growth">08:36 <span class="comment red"> -24 мин </span></div>
+                            <div class="time">08:27 <span class="comment green"> -3 мин </span></div>
+                            <div class="percent">08:27 <span class="comment green"> -3 мин </span></div>
+                            <div class="growth">08:36 <span class="comment red"> -24 мин </span></div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
+                        <li class="list-item">
+                            <div class="criterium">
                                 25.02
                             </div>
-                            <div class="tabs__item-chart dicsipline time">08:42 <span class="comment red"> +12 мин </span></div>
-                            <div class="tabs__item-chart dicsipline percent">08:42 <span class="comment red"> +12 мин </span></div>
-                            <div class="tabs__item-chart dicsipline growth">08:36 <span class="comment red"> -24 мин </span></div>
+                            <div class="time">08:42 <span class="comment red"> +12 мин </span></div>
+                            <div class="percent">08:42 <span class="comment red"> +12 мин </span></div>
+                            <div class="growth">08:36 <span class="comment red"> -24 мин </span></div>
                         </li>
-                    </ul> -->
+                    </ul>
+                </div>
                 </div>
             </div>
         </div>
@@ -315,471 +323,474 @@
         <div class="tabs__item">
             <div class="wrapper">
                 <div class="tabs__item-header">
-                    <div class="block">
-                        <img src="icons/menu/vic.jpg" alt="фотография Виктории" class="tabs__item-header img">
-                        <img src="icons/main/smile.svg" alt="статус работника" class="tabs__item-header status">
-                        <h3 class="tabs__item-header name">
+                    <div class=" info">
+                        <img src="icons/menu/vic.jpg" alt="фотография Виктории" class="tabs__item-header info img">
+                        <img src="icons/main/smile.svg" alt="статус работника" class="tabs__item-header info status">
+                        <h3 class="name">
                         Виктория Беляева
                         </h3>
-                        <div class="tabs__item-header descr">
+                        <div class="descr">
                             Менеджер, Отдел продаж
                         </div>
-                        <img src="icons/menu/current.svg" alt="текущий сотрудник" class="tabs__item-header current">
+                        <img src="icons/menu/current.svg" alt="текущий сотрудник" class="current">
                     </div>
-                    <div class="block">
-                        <div class="tabs__item-header online">
-                            Последняя антивность  <span> сегодня в 12.22</span>
-                        </div>
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="online">
+                        Последняя антивность  <span> сегодня в 12.22</span>
+                    </div>
+                    <div class="risks">
+                        <h4 class="subtitle">
                             уровень риска
                         </h4>
-                        <div class="tabs__item-header number">
+                        <div class="number">
                             157
                         </div>
-                        <div class="tabs__item-header percentage">
+                        <div class="percentage">
                             -100%
                         </div>
-                        <img src="icons/main/arrow.svg" alt="снижение показателя" class="tabs__item-header sign">
+                        <img src="icons/main/arrow.svg" alt="снижение показателя" class="sign">
                     </div>
-                    <div class="block">
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="production">
+                        <h4 class="subtitle">
                             продуктивность
                         </h4>
-                        <div class="tabs__item-header number">
+                        <div class="number">
                             86%
                         </div>
-                        <div class="tabs__item-header percentage">
+                        <div class="percentage">
                             +3%
                         </div>
-                        <img src="icons/main/arrowgr.svg" alt="снижение показателя" class="tabs__item-header sign">
+                        <img src="icons/main/arrowgr.svg" alt="снижение показателя" class="sign">
                     </div>
-                    <div class="block">
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="activity">
+                        <h4 class="subtitle">
                             индекс активности
                         </h4>
-                        <div class="tabs__item-header number">
+                        <div class="number">
                             2,4%
                         </div>
-                        <div class="tabs__item-header percentage">
+                        <div class="percentage">
                             +14%
                         </div>
-                        <img src="icons/main/arrowred.svg" alt="снижение показателя" class="tabs__item-header sign">
+                        <img src="icons/main/arrowred.svg" alt="снижение показателя" class="sign">
                     </div>
-                    <div class="block">
-                        <a href="#" class="tabs__item-header link">
-                        <img src="icons/main/back.svg" alt="назад" class="back"> к списку сотрудников
+                    <div class="link-back">
+                        <a href="#" class="link">
+                            <img src="icons/main/back.svg" alt="назад" class="back"> к списку сотрудников
                         </a>
-                        <div class="tabs__item-header contacts">
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/check.svg" alt="проверить контакт">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/video.svg" alt="видеосвязь">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/window.svg" alt="открыть рабочий стол">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/list.svg" alt="добавить контакт">
-                            </a>
-                        </div>
+                    </div>
+                    <div class="contacts">
+                        <a href="#" class="contact">
+                            <img src="icons/main/check.svg" alt="проверить контакт">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/video.svg" alt="видеосвязь">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/window.svg" alt="открыть рабочий стол">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/list.svg" alt="добавить контакт">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="tabs__item-analitics">
-                <h3 class="tabs__item-analitics header">
+                <h3 class="header">
                     аномалии
                 </h3>
-                <div class="tabs__item-analitics warnings">
-                    <div class="tabs__item-analitics warning">
+                <div class="warnings">
+                    <div class="warning">
                         <img src="icons/main/error.svg" alt="предупреждение" class="tabs__item-analitics img">
-                        <div class="tabs__item-analitics descr">
+                        <div class="descr">
                             Использование более одного аккаунта в соцсетях и мессенджерах
                         </div>
                     </div>
-                    <div class="tabs__item-analitics warning">
-                        <img src="icons/main/error.svg" alt="предупреждение" class="tabs__item-analitics img">
-                        <div class="tabs__item-analitics descr">
+                    <div class="warning">
+                        <img src="icons/main/error.svg" alt="предупреждение" class="img">
+                        <div class="descr">
                             Первое использование устройства
                         </div>
                     </div>
-                    <div class="tabs__item-analitics warning">
-                        <img src="icons/main/error.svg" alt="предупреждение" class="tabs__item-analitics img">
-                        <div class="tabs__item-analitics descr">
+                    <div class="warning">
+                        <img src="icons/main/error.svg" alt="предупреждение" class="img">
+                        <div class="descr">
                             Отсутствие более 40 дней
                         </div>
                     </div>
                 </div>
             </div>
             <div class="tabs__item-main">
-                <h3 class="tabs__item-main header">
+                <h3 class="header">
                     основные показатели
                 </h3>
-                <div class="tabs__item-main data">
+                <div class="data">
                     Данные не найдены
                 </div>
             </div>
             <div class="tabs__item-statistic">
                 <div class="tabs__item-chart">
-                    <h3 class="tabs__item-chart header">
+                    <h3 class="header">
                         Приложения и категории
                     </h3>
-                    <ul class="tabs__item-chart list">
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart criterium">
+                    <ul class="list">
+                        <li class="list-item">
+                            <div class="criterium">
                                 Категории приложений
                             </div>
-                            <div class="tabs__item-chart time">время</div>
-                            <div class="tabs__item-chart percent">%</div>
-                            <div class="tabs__item-chart growth">рост</div>
+                            <div class="time">время</div>
+                            <div class="percent">%</div>
+                            <div class="growth">рост</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square yellow"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square yellow"></div>
+                            <div class="criterium">
                                 Мессенджеры
                             </div>
-                            <div class="tabs__item-chart time"> 20.55</div>
-                            <div class="tabs__item-chart percent">18</div>
-                            <div class="tabs__item-chart growth">+2</div>
+                            <div class="time"> 20.55</div>
+                            <div class="percent">18</div>
+                            <div class="growth">+2</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square yellow"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square yellow"></div>
+                            <div class="criterium">
                                 Браузеры
                             </div>
-                            <div class="tabs__item-chart time"> 15.11</div>
-                            <div class="tabs__item-chart percent">12</div>
-                            <div class="tabs__item-chart growth">+3</div>
+                            <div class="time"> 15.11</div>
+                            <div class="percent">12</div>
+                            <div class="growth">+3</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square red"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square red"></div>
+                            <div class="criterium">
                                 Игры
                             </div>
-                            <div class="tabs__item-chart time">13.11</div>
-                            <div class="tabs__item-chart percent">7</div>
-                            <div class="tabs__item-chart growth">0</div>
+                            <div class="time">13.11</div>
+                            <div class="percent">7</div>
+                            <div class="growth">0</div>
                         </li>
                     </ul>
                 </div>
                 <div class="tabs__item-chart">
-                    <h3 class="tabs__item-chart header">
+                    <h3 class="header">
                         Сайты и категории
                     </h3>
-                        <ul class="tabs__item-chart list">
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart criterium">
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="criterium">
                                     Категории сайтов
                                 </div>
-                                <div class="tabs__item-chart time">время</div>
-                                <div class="tabs__item-chart percent">%</div>
-                                <div class="tabs__item-chart growth">рост</div>
+                                <div class="time">время</div>
+                                <div class="percent">%</div>
+                                <div class="growth">рост</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square yellow"></div>
-                                <div class="tabs__item-chart criterium">
+                            <li class="list-item">
+                                <div class="square yellow"></div>
+                                <div class="criterium">
                                     поисковики
                                 </div>
-                                <div class="tabs__item-chart time"> 20.55</div>
-                                <div class="tabs__item-chart percent">18</div>
-                                <div class="tabs__item-chart growth">+2</div>
+                                <div class="time"> 20.55</div>
+                                <div class="percent">18</div>
+                                <div class="growth">+2</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square green"></div>
-                                <div class="tabs__item-chart criterium">
+                            <li class="list-item">
+                                <div class="square green"></div>
+                                <div class="criterium">
                                     Новостные порталы
                                 </div>
-                                <div class="tabs__item-chart time"> 15.11</div>
-                                <div class="tabs__item-chart percent">12</div>
-                                <div class="tabs__item-chart growth">+3</div>
+                                <div class="time"> 15.11</div>
+                                <div class="percent">12</div>
+                                <div class="growth">+3</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square green"></div>
-                                <div id="long" class="tabs__item-chart criterium long">
+                            <li class="list-item">
+                                <div class="square green"></div>
+                                <div id="long" class="criterium long">
                                     Сайты с неопределенным наполнением
                                 </div>
-                                <div class="tabs__item-chart time">13.11</div>
-                                <div class="tabs__item-chart percent">7</div>
-                                <div class="tabs__item-chart growth">0</div>
+                                <div class="time">13.11</div>
+                                <div class="percent">7</div>
+                                <div class="growth">0</div>
                             </li>
                         </ul>
                 </div>
-            <div class="tabs__item-statistic">
-                <div class="tabs__item-chart dicsipline">
-                    <h3 class="tabs__item-chart header">
-                        Дисциплина
-                    </h3>
-                    <ul class="tabs__item-chart list">
-                        <li class="tabs__item-chart dicsipline list-item first">
-                            <div class="tabs__item-chart dicsipline criterium">
-                                Дата
-                            </div>
-                            <div class="tabs__item-chart dicsipline time">Приход на работу</div>
-                            <div class="tabs__item-chart dicsipline percent">Уход с работы</div>
-                            <div class="tabs__item-chart dicsipline growth">Время на работе</div>
-                        </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
-                                29.02
-                            </div>
-                            <div class="tabs__item-chart dicsipline time">08:46 <span class="comment red"> +16 мин </span> </div>
-                            <div class="tabs__item-chart dicsipline percent">08:46 <span class="comment red"> +16 мин </span> </div>
-                            <div class="tabs__item-chart dicsipline growth">09:06 <span class="comment green"> +6 мин </span> </div>
-                        </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
-                                28.02
-                            </div>
-                            <div class="tabs__item-chart dicsipline time">08:27 <span class="comment green"> -3 мин </span></div>
-                            <div class="tabs__item-chart dicsipline percent">08:27 <span class="comment green"> -3 мин </span></div>
-                            <div class="tabs__item-chart dicsipline growth">08:36 <span class="comment red"> -24 мин </span></div>
-                        </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
-                                25.02
-                            </div>
-                            <div class="tabs__item-chart dicsipline time">08:42 <span class="comment red"> +12 мин </span></div>
-                            <div class="tabs__item-chart dicsipline percent">08:42 <span class="comment red"> +12 мин </span></div>
-                            <div class="tabs__item-chart dicsipline growth">08:36 <span class="comment red"> -24 мин </span></div>
-                        </li>
-                    </ul>
+                <div class="tabs__item-chart">
+                    
+                    <div class="dicsipline">
+                        <h3 class="header">
+                            Дисциплина
+                        </h3>
+                        <ul class="list">
+                            <li class="list-item first">
+                                <div class="dicsipline criterium">
+                                    Дата
+                                </div>
+                                <div class="time">Приход на работу</div>
+                                <div class="percent">Уход с работы</div>
+                                <div class="growth">Время на работе</div>
+                            </li>
+                            <li class="list-item">
+                                <div class="criterium">
+                                    29.02
+                                </div>
+                                <div class="time">08:46 <span class="comment red"> +16 мин </span> </div>
+                                <div class="percent">08:46 <span class="comment red"> +16 мин </span> </div>
+                                <div class="growth">09:06 <span class="comment green"> +6 мин </span> </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="criterium">
+                                    28.02
+                                </div>
+                                <div class="time">08:27 <span class="comment green"> -3 мин </span></div>
+                                <div class="percent">08:27 <span class="comment green"> -3 мин </span></div>
+                                <div class="growth">08:36 <span class="comment red"> -24 мин </span></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="criterium">
+                                    25.02
+                                </div>
+                                <div class="time">08:42 <span class="comment red"> +12 мин </span></div>
+                                <div class="percent">08:42 <span class="comment red"> +12 мин </span></div>
+                                <div class="growth">08:36 <span class="comment red"> -24 мин </span></div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
         </div>
         </div>
+        
         <div class="tabs__item">
             <div class="wrapper">
                 <div class="tabs__item-header">
-                    <div class="block">
-                        <img src="icons/menu/victor.jpg" alt="фотография Виктора" class="tabs__item-header img">
-                        <img src="icons/main/smile.svg" alt="статус работника" class="tabs__item-header status">
-                        <h3 class="tabs__item-header name">
+                    <div class=" info">
+                        <img src="icons/menu/victor.jpg" alt="фотография Виктора" class="tabs__item-header info img">
+                        <img src="icons/main/smile.svg" alt="статус работника" class="tabs__item-header info status">
+                        <h3 class="name">
                         Виктор Сурков
                         </h3>
-                        <div class="tabs__item-header descr">
+                        <div class="descr">
                             Менеджер, Отдел продаж
                         </div>
-                        <img src="icons/menu/current.svg" alt="текущий сотрудник" class="tabs__item-header current">
+                        <img src="icons/menu/current.svg" alt="текущий сотрудник" class="current">
                     </div>
-                    <div class="block">
-                        <div class="tabs__item-header online">
-                            Последняя антивность  <span> вчера в 15.22</span>
-                        </div>
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="online">
+                        <!-- Последняя антивность  <span> сегодня в 12.22</span> -->
+                    </div>
+                    <div class="risks">
+                        <h4 class="subtitle">
                             уровень риска
                         </h4>
-                        <!-- <div class="tabs__item-header number">
+                        <!-- <div class="number">
                             157
                         </div>
-                        <div class="tabs__item-header percentage">
+                        <div class="percentage">
                             -100%
                         </div>
-                        <img src="icons/main/arrow.svg" alt="снижение показателя" class="tabs__item-header sign"> -->
+                        <img src="icons/main/arrow.svg" alt="снижение показателя" class="sign"> -->
                     </div>
-                    <div class="block">
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="production">
+                        <h4 class="subtitle">
                             продуктивность
                         </h4>
-                        <!-- <div class="tabs__item-header number">
+                        <!-- <div class="number">
                             86%
                         </div>
-                        <div class="tabs__item-header percentage">
+                        <div class="percentage">
                             +3%
                         </div>
-                        <img src="icons/main/arrowgr.svg" alt="снижение показателя" class="tabs__item-header sign"> -->
+                        <img src="icons/main/arrowgr.svg" alt="снижение показателя" class="sign"> -->
                     </div>
-                    <div class="block">
-                        <h4 class="tabs__item-header subtitle">
+                    <div class="activity">
+                        <h4 class="subtitle">
                             индекс активности
                         </h4>
-                        <!-- <div class="tabs__item-header number">
+                        <!-- <div class="number">
                             2,4%
                         </div>
-                        <div class="tabs__item-header percentage">
+                        <div class="percentage">
                             +14%
                         </div>
-                        <img src="icons/main/arrowred.svg" alt="снижение показателя" class="tabs__item-header sign"> -->
+                        <img src="icons/main/arrowred.svg" alt="снижение показателя" class="sign"> -->
                     </div>
-                    <div class="block">
-                        <a href="#" class="tabs__item-header link">
-                        <img src="icons/main/back.svg" alt="назад" class="back"> к списку сотрудников
+                    <div class="link-back">
+                        <a href="#" class="link">
+                            <img src="icons/main/back.svg" alt="назад" class="back"> к списку сотрудников
                         </a>
-                        <div class="tabs__item-header contacts">
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/check.svg" alt="проверить контакт">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/video.svg" alt="видеосвязь">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/window.svg" alt="открыть рабочий стол">
-                            </a>
-                            <a href="#" class="tabs__item-header contact">
-                                <img src="icons/main/list.svg" alt="добавить контакт">
-                            </a>
-                        </div>
+                    </div>
+                    <div class="contacts">
+                        <a href="#" class="contact">
+                            <img src="icons/main/check.svg" alt="проверить контакт">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/video.svg" alt="видеосвязь">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/window.svg" alt="открыть рабочий стол">
+                        </a>
+                        <a href="#" class="contact">
+                            <img src="icons/main/list.svg" alt="добавить контакт">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="tabs__item-analitics">
-                <h3 class="tabs__item-analitics header">
+                <h3 class="header">
                     аномалии
                 </h3>
-                <div class="tabs__item-analitics warnings">
-                    <div class="tabs__item-analitics warning">
-                        <img src="icons/main/error.svg" alt="предупреждение" class="tabs__item-analitics img">
-                        <div class="tabs__item-analitics descr">
+                <div class="warnings">
+                    <div class="warning">
+                        <img src="icons/main/error.svg" alt="предупреждение" class="img">
+                        <div class="descr">
                             Использование более одного аккаунта в соцсетях и мессенджерах
                         </div>
                     </div>
-                    <!-- <div class="tabs__item-analitics warning">
-                        <img src="icons/main/error.svg" alt="предупреждение" class="tabs__item-analitics img">
-                        <div class="tabs__item-analitics descr">
+                    <!-- <div class="warning">
+                        <img src="icons/main/error.svg" alt="предупреждение" class="img">
+                        <div class="descr">
                             Первое использование устройства
                         </div>
                     </div>
-                    <div class="tabs__item-analitics warning">
-                        <img src="icons/main/error.svg" alt="предупреждение" class="tabs__item-analitics img">
-                        <div class="tabs__item-analitics descr">
+                    <div class="warning">
+                        <img src="icons/main/error.svg" alt="предупреждение" class="img">
+                        <div class="descr">
                             Отсутствие более 40 дней
                         </div>
                     </div> -->
                 </div>
             </div>
             <div class="tabs__item-main">
-                <h3 class="tabs__item-main header">
+                <h3 class="header">
                     основные показатели
                 </h3>
-                <div class="tabs__item-main data">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ducimus necessitatibus, inventore, veritatis error quasi ex dolorem dolorum fugit amet id numquam perspiciatis dolores! Quidem quod totam dolore unde esse!
+                <div class="data">
+                    Данные не найдены
                 </div>
             </div>
             <div class="tabs__item-statistic">
                 <div class="tabs__item-chart">
-                    <h3 class="tabs__item-chart header">
+                    <h3 class="header">
                         Приложения и категории
                     </h3>
-                    <ul class="tabs__item-chart list">
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart criterium">
+                    <ul class="list">
+                        <li class="list-item">
+                            <div class="criterium">
                                 Категории приложений
                             </div>
-                            <div class="tabs__item-chart time">время</div>
-                            <div class="tabs__item-chart percent">%</div>
-                            <div class="tabs__item-chart growth">рост</div>
+                            <div class="time">время</div>
+                            <div class="percent">%</div>
+                            <div class="growth">рост</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square yellow"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square yellow"></div>
+                            <div class="criterium">
                                 Мессенджеры
                             </div>
-                            <div class="tabs__item-chart time"> 20.55</div>
-                            <div class="tabs__item-chart percent">18</div>
-                            <div class="tabs__item-chart growth">+2</div>
+                            <div class="time"> 20.55</div>
+                            <div class="percent">18</div>
+                            <div class="growth">+2</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square yellow"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square yellow"></div>
+                            <div class="criterium">
                                 Браузеры
                             </div>
-                            <div class="tabs__item-chart time"> 15.11</div>
-                            <div class="tabs__item-chart percent">12</div>
-                            <div class="tabs__item-chart growth">+3</div>
+                            <div class="time"> 15.11</div>
+                            <div class="percent">12</div>
+                            <div class="growth">+3</div>
                         </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart square red"></div>
-                            <div class="tabs__item-chart criterium">
+                        <li class="list-item">
+                            <div class="square red"></div>
+                            <div class="criterium">
                                 Игры
                             </div>
-                            <div class="tabs__item-chart time">13.11</div>
-                            <div class="tabs__item-chart percent">7</div>
-                            <div class="tabs__item-chart growth">0</div>
+                            <div class="time">13.11</div>
+                            <div class="percent">7</div>
+                            <div class="growth">0</div>
                         </li>
                     </ul>
                 </div>
                 <div class="tabs__item-chart">
-                    <h3 class="tabs__item-chart header">
+                    <h3 class="header">
                         Сайты и категории
                     </h3>
-                        <ul class="tabs__item-chart list">
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart criterium">
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="criterium">
                                     Категории сайтов
                                 </div>
-                                <div class="tabs__item-chart time">время</div>
-                                <div class="tabs__item-chart percent">%</div>
-                                <div class="tabs__item-chart growth">рост</div>
+                                <div class="time">время</div>
+                                <div class="percent">%</div>
+                                <div class="growth">рост</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square yellow"></div>
-                                <div class="tabs__item-chart criterium">
+                            <li class="list-item">
+                                <div class="square yellow"></div>
+                                <div class="criterium">
                                     поисковики
                                 </div>
-                                <div class="tabs__item-chart time"> 20.55</div>
-                                <div class="tabs__item-chart percent">18</div>
-                                <div class="tabs__item-chart growth">+2</div>
+                                <div class="time"> 20.55</div>
+                                <div class="percent">18</div>
+                                <div class="growth">+2</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square green"></div>
-                                <div class="tabs__item-chart criterium">
+                            <li class="list-item">
+                                <div class="square green"></div>
+                                <div class="criterium">
                                     Новостные порталы
                                 </div>
-                                <div class="tabs__item-chart time"> 15.11</div>
-                                <div class="tabs__item-chart percent">12</div>
-                                <div class="tabs__item-chart growth">+3</div>
+                                <div class="time"> 15.11</div>
+                                <div class="percent">12</div>
+                                <div class="growth">+3</div>
                             </li>
-                            <li class="tabs__item-chart list-item">
-                                <div class="tabs__item-chart square green"></div>
-                                <div id="long" class="tabs__item-chart criterium long">
+                            <li class="list-item">
+                                <div class="tabs__igreen"></div>
+                                <div id="long" class="criterium long">
                                     Сайты с неопределенным наполнением
                                 </div>
-                                <div class="tabs__item-chart time">13.11</div>
-                                <div class="tabs__item-chart percent">7</div>
-                                <div class="tabs__item-chart growth">0</div>
+                                <div class="time">13.11</div>
+                                <div class="percent">7</div>
+                                <div class="growth">0</div>
                             </li>
                         </ul>
                 </div>
-            <div class="tabs__item-statistic">
-                <div class="tabs__item-chart dicsipline">
-                    <h3 class="tabs__item-chart header">
-                        Дисциплина
-                    </h3>
-                    <ul class="tabs__item-chart list">
-                        <li class="tabs__item-chart dicsipline list-item first">
-                            <div class="tabs__item-chart dicsipline criterium">
-                                Дата
-                            </div>
-                            <div class="tabs__item-chart dicsipline time">Приход на работу</div>
-                            <div class="tabs__item-chart dicsipline percent">Уход с работы</div>
-                            <div class="tabs__item-chart dicsipline growth">Время на работе</div>
-                        </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
-                                29.02
-                            </div>
-                            <div class="tabs__item-chart dicsipline time">08:46 <span class="comment red"> +16 мин </span> </div>
-                            <div class="tabs__item-chart dicsipline percent">08:46 <span class="comment red"> +16 мин </span> </div>
-                            <div class="tabs__item-chart dicsipline growth">09:06 <span class="comment green"> +6 мин </span> </div>
-                        </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
-                                28.02
-                            </div>
-                            <div class="tabs__item-chart dicsipline time">08:27 <span class="comment green"> -3 мин </span></div>
-                            <div class="tabs__item-chart dicsipline percent">08:27 <span class="comment green"> -3 мин </span></div>
-                            <div class="tabs__item-chart dicsipline growth">08:36 <span class="comment red"> -24 мин </span></div>
-                        </li>
-                        <li class="tabs__item-chart list-item">
-                            <div class="tabs__item-chart dicsipline criterium">
-                                25.02
-                            </div>
-                            <div class="tabs__item-chart dicsipline time">08:42 <span class="comment red"> +12 мин </span></div>
-                            <div class="tabs__item-chart dicsipline percent">08:42 <span class="comment red"> +12 мин </span></div>
-                            <div class="tabs__item-chart dicsipline growth">08:36 <span class="comment red"> -24 мин </span></div>
-                        </li>
-                    </ul>
+                <div class="tabs__item-chart">
+                    
+                    <div class="dicsipline">
+                        <h3 class="header">
+                            Дисциплина
+                        </h3>
+                        <ul class="list">
+                            <li class="list-item first">
+                                <div class="dicsipline criterium">
+                                    Дата
+                                </div>
+                                <div class="time">Приход на работу</div>
+                                <div class="percent">Уход с работы</div>
+                                <div class="growth">Время на работе</div>
+                            </li>
+                            <li class="list-item">
+                                <div class="criterium">
+                                    29.02
+                                </div>
+                                <div class="time">08:46 <span class="comment red"> +16 мин </span> </div>
+                                <div class="percent">08:46 <span class="comment red"> +16 мин </span> </div>
+                                <div class="growth">09:06 <span class="comment green"> +6 мин </span> </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="criterium">
+                                    28.02
+                                </div>
+                                <div class="time">08:27 <span class="comment green"> -3 мин </span></div>
+                                <div class="percent">08:27 <span class="comment green"> -3 мин </span></div>
+                                <div class="growth">08:36 <span class="comment red"> -24 мин </span></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="criterium">
+                                    25.02
+                                </div>
+                                <div class="time">08:42 <span class="comment red"> +12 мин </span></div>
+                                <div class="percent">08:42 <span class="comment red"> +12 мин </span></div>
+                                <div class="growth">08:36 <span class="comment red"> -24 мин </span></div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
         </div>
         </div>
     </section>

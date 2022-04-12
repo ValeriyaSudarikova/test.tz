@@ -5,132 +5,193 @@
         padding: 16px 21px;
         position: absolute;
         left: 340px;
-        top: -306px;
-        
+        top: -320px;
     }
     &__item-header {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        &.img {
-            width: 58px;
-            height: 58px;
-            border-radius: 100%;
-            object-fit: fill;
+        display: grid;
+        grid-template-columns: 1.3fr repeat(4, 1fr);
+        grid-template-rows: repeat(2, 75px);
+        .info {
+            position: relative;
+            grid-column: 1/2;
+            grid-row: 1/3;
+            .img {
+                display: block;
+                width: 58px;
+                height: 58px;
+                border-radius:100%;
+                object-fit: fill;
+            }
+            .status {
+                width: 17px;
+                height: 17px;
+                border-radius: 100%;
+                background-color: #fff;
+                position: absolute;
+                top: 45px;
+                left: 40px;
+            }
+            .name {
+                position: absolute;
+                display: block;
+                font-weight: 600;
+                font-size: 25px;
+                top: 0;
+                left: 70px;
+            }
+            .descr {
+                position: absolute;
+                display: block;
+                font-weight: 600;
+                font-size: 12px;
+                top: 35px;
+                left: 70px;
+            }
+            .current {
+                position: absolute;
+                display: block;
+                left: 320px;
+                top: 0;
+            }
         }
-        &.current {
-            width: 15px;
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 250px;
-        }
-        &.status {
-            position:absolute;
-            display: block;
-            left: 40px;
-            top: 43px;
-            width: 17px;
-            height: 17px;
-            background: #fff;
-            border-radius: 100%;
-        }
-        &.name {
-            font-size: 20px;
-            position: absolute;
-            top: 2px;
-            left: 70px;
-        }
-        &.descr {
-            font-size: 11px;
-            color: #808080;
-            position: absolute;
-            top: 30px;
-            left: 71px;
-        }
-        &.online {
-            color:  #808080;
-            font-size: 11px;
+        .online {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            font-size: 12px;
+            font-weight: 400;
+            color:#808080;
             span {
-                margin-left: 3px;
                 color: #3E3E3E;
             }
         }
-        &.subtitle {
-            font-size: 13px;
-            color: #808080;
-            margin-top: 25px;
-            &:nth-child(4) {
-                margin-top: 52px;
+        .risks {
+            position: relative;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            .subtitle {
+                font-size: 12px;
+                color:#808080;
+                margin-top: -20px;
+            }
+            .number {
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .percentage {
+                font-size: 10px;
+                font-weight: 400;
+                position: absolute;
+                left: 40px;
+                top: 16px;
+                color: $red;
+            }
+            .sign {
+                position: absolute;
+                left: 36px;
+                top: 5px;
             }
         }
-        &.number {
-            font-size: 17px;
-            margin-top: 10px;
-        }
-        &.percentage {
-            font-size: 9px;
-            color: $red;
-            position: absolute;
-            left: 30px;
-            top: 75px;
-        }
-        &.sign {
-            position: absolute;
-            left: 25px;
-            top: 69px;
-            width: 7px;
-        }
-        &.divider {
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 50px;
-            height: 37px;
-            width: 1px;
-            color: black;
-        }
-        &.link {
-            text-decoration: none;
-            color: $main-color;
-            text-align: right;
-            font-size: 10px;
-            padding-left: 100px;
-            & img {
-                width: 12px;
-                margin-right: 5px;
-                margin-top: 3px;
+        .production {
+            position: relative;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            .subtitle {
+                font-size: 12px;
+                color:#808080;
+                margin-top: -20px;
             }
-            &:hover {
-                text-decoration: underline;
+            .number {
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .percentage {
+                font-size: 10px;
+                font-weight: 400;
+                position: absolute;
+                left: 52px;
+                top: 16px;
+                color: $red;
+            }
+            .sign {
+                position: absolute;
+                left: 48px;
+                top: 5px;
             }
         }
-        &.contacts {
-            margin-top: 30px;
+        .activity {
+            grid-column: 4/5;
+            grid-row: 2/3;
+            position: relative;
+            .subtitle {
+                font-size: 12px;
+                color:#808080;
+                margin-top: -20px;
+            }
+            .number {
+                font-size: 22px;
+                font-weight: 600;
+            }
+            .percentage {
+                font-size: 10px;
+                font-weight: 400;
+                position: absolute;
+                left: 55px;
+                top: 16px;
+                color: $red;
+            }
+            .sign {
+                position: absolute;
+                left: 50px;
+                top: 5px;
+            }
+        }
+        .link-back {
+            grid-column: 5/6;
+            grid-row: 1/2;
+            .link {
+                position: relative;
+                display: block;
+                text-align: right;
+                text-decoration: none;
+                color: $main-color;
+                &:hover {
+                    text-decoration: underline;
+                }
+                .back {
+                    margin-top: 3px;
+                }
+            }
+        }
+        .contacts {
             display: flex;
-            justify-content:space-around;
-        }
-        &.contact {
-            display: block;
-            & img:hover {
-                width: 110%;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-start;
+            grid-column: 5/6;
+            grid-row: 2/3;
+            .contact {
+                margin-left: 15px;
+                & img:hover {
+                    width: 25px;
+                    height: 25px;
+                }
             }
         }
     }
     &__item-analitics {
-        &.header {
+        .header {
             margin-top: 33px;
             text-transform: uppercase;
             font-size: 15px;
             font-weight: 300;
         }
-        &.warnings {
+        .warnings {
             margin-top: 20px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
         }
-        &.warning {
+        .warning {
             position: relative;
             width: 400px;
             height: 74px;
@@ -141,7 +202,7 @@
             font-size: 13px;
             color:#3E3E3E;
         }
-        &.img {
+        .img {
             position: absolute;
             left: 10px;
             top: 30px;
@@ -172,7 +233,7 @@
         justify-content: space-between;
     }
     &__item-chart {
-        &.header {
+        .header {
             margin-top: 27px;
             margin-bottom: 20px;
             font-size: 15px;
@@ -180,12 +241,12 @@
             font-weight: 300;
             text-align: left;
         }
-        &.list {
+        .list {
             position: relative;
             padding-left: 0;
             list-style: none;
         }
-        &.list-item {
+        .list-item {
             display: flex;
             flex-direction: row;
             border-bottom: 1px solid #F3F2F2;
@@ -195,25 +256,25 @@
                 color:#808080;
             }
         }
-        &.criterium {
+        .criterium {
             width: 205px;
             &:nth-child(2) {
                 padding-left: 20px;
             }
         }
-        &.time {
+        .time {
             width: 71px;
             padding-left: 10px;
         }
-        &.percent {
+        .percent {
             width: 70px;
             padding-left: 20px;
         }
-        &.growth {
+        .growth {
             width: 50px;
             text-align: left;
         }
-        &.square {
+        .square {
             width: 10px;
             height: 10px;
             position: absolute;
@@ -230,31 +291,31 @@
                 background-color:#A6C8B3;
             }
         }
-        &.dicsipline {
+        .dicsipline {
             width: 400px;
-            &.list-item {
+            justify-content: flex-start;
+            .list-item {
                 &.first {
                     text-align: center;
-                    align-items:center;
-                    justify-content: center;
+                    align-items:center
                 }
             }
-            &.criterium {
+            .criterium {
                 margin-right: 15px;
                 text-align: center;
                 width: 65px;
             }
-            &.time {
+            .time {
                 margin-right: 15px;
                 padding-left: 0;
                 width: 95px;
             }
-            &.percent {
+            .percent {
                 margin-right: 15px;
                 padding-left: 0;
                 width: 90px;
             }
-            &.growth {
+            .growth {
                 width: 100px;
                 &:first-child {
                     display: block;
@@ -263,33 +324,7 @@
             }
         }
     }
-.block {
-    margin-left: 60px;
-    position: relative;
-    min-width: 250px;
-    &:nth-child(1) {
-        margin-left: 0;
-        width: 300px;
-    }
-    &:nth-child(3) {
-        padding-top: 15px;
-        .percentage {
-            left: 37px;
-        }
-        .sign {
-            left: 35px;
-        }
-    }
-    &:nth-child(4) {
-        padding-top: 15px;
-        .percentage {
-            left: 42px;
-        }
-        .sign {
-            left: 38px;
-        }
-    }
-}
+
 .wrapper {
     min-height: 134px;
     border-bottom: 1px solid #E4E4E4;

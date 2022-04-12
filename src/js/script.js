@@ -97,14 +97,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     tabs('.menu__item', '.tabs__item', '.menu__list', 'active', '.tabs__item-header .link')
 
-    //return 
+    //header link 
 
-    // const mainLink = document.querySelector('.tabs__item-header .link');
+    const linksParent = document.querySelector('.links'),
+          links = document.querySelectorAll('.menu__item-name'),
+          menuList = document.querySelectorAll('.menu__item');
+    
+    let linksName = [];
 
-    // mainLink.addEventListener('click', function() {
-    //     document.querySelectorAll('.tabs__item').forEach(item => item.style.display = 'none');
-    //     document.querySelector('#main').style.display = 'block';
-    // })
+    function getLinksNames(list, arr) {
+        list.forEach(item => {
+            arr.push(item.innerHTML);
+        });
+    }
+
+    getLinksNames(links, linksName);
+
+    const link = document.createElement('a');
+
+    link.classList.add('links__main', 'name');
+
+    menuList.forEach((item,i) => {
+        item.addEventListener('click', function() {
+            link.innerHTML = linksName[i];
+            linksParent.appendChild(link);
+        })
+    })
+
+    //open menu 
+
+
 
 
 
