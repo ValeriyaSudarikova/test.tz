@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //cutting string
 
-    const longStr = document.querySelector('#long');
+    const longStr = document.querySelectorAll('.long');
 
     function cutStr(str) {
         let newStr = ' '
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return str.innerHTML = newStr;
     }
 
-    cutStr(longStr);
+    longStr.forEach(item => cutStr(item));
 
     //menu search 
 
@@ -126,10 +126,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //open menu 
 
+    const menuOpenTarget = document.querySelector('.menu__open'),
+          menuCloseTarget = document.querySelector('.menu__close'),
+          menuItems = document.querySelector('.menu__list');
 
+    function menuOpen(openTarget, menu, closeTarget) {
+        
+        openTarget.addEventListener('click', () => {
+            menu.style.display = 'block';
+            closeTarget.style.display = 'block';
+            openTarget.style.display = 'none';
+        });
+    }
 
+    function menuClose (openTarget, menu, closeTarget) {
 
+        closeTarget.addEventListener('click', () => {
+            menu.style.display = 'none';
+            closeTarget.style.display = 'none';
+            openTarget.style.display = 'block';
+        });
+    }
 
+    menuOpen(menuOpenTarget, menuItems, menuCloseTarget);
+    menuClose(menuOpenTarget, menuItems, menuCloseTarget);
 
 
 
